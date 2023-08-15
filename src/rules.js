@@ -730,7 +730,7 @@ Rules.field = value => {
  */
 Rules.image = value => {
   if (helper.isObject(value)) {
-    value = value.name;
+    value = value.originalFilename;
   }
   return /\.(?:jpeg|jpg|png|bmp|gif|svg)$/i.test(value);
 };
